@@ -30,7 +30,7 @@ function convertToObject(sourceString) {
   modifiedStr.map((item, i) => {
     const arr = item.trim().split(':');
 
-    if (i !== modifiedStr.length - 1 && arr[0].length !== 0) {
+    if (arr[0].length !== 0) {
       const key = arr[0].trim();
       const value = arr[1] ? arr[1].trim() : '';
 
